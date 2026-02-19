@@ -230,7 +230,7 @@ Update the following:
 ```env
 FRONTEND_URL="https://ethara-ai-frontend.vercel.app"   # Frontend URL
 CSRF_TRUSTED_ORIGINS="https://ethara-ai-frontend.vercel.app"   # Frontend URL
-ALLOWED_HOSTS="eathara-ai-backend-production.up.railway.app   # Backend service -> settings -> Networking -> Copy Public Domain
+ALLOWED_HOSTS="eathara-ai-backend-production.up.railway.app"   # Backend service -> settings -> Networking -> Copy Public Domain
 ```
 
 ⚠️ `ALLOWED_HOSTS` should contain only the backend domain (without https).
