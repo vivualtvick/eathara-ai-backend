@@ -102,7 +102,7 @@ sudo docker compose -f docker-compose.local.yaml up --build
 
 ### 7. Frontend Setup
 
-Follow the setup instructions from the frontend repository: [Click for repo](https://github.com/developervick/EatherAI-assignment)
+Follow the setup instructions from the frontend repository: [Click for repo](https://github.com/vivualtvick/ethara-ai-frontend)
 
 
 
@@ -258,13 +258,4 @@ It can be easily extended to:
 
 ---
 
-## Summary
-
-This backend setup provides:
-- Clean project structure
-- Strong Docker-based isolation
-- Automated startup checks
-- Secure and scalable Django deployment
-
-A solid foundation for building and scaling modern backend services.
 
