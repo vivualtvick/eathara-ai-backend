@@ -2,8 +2,7 @@ Below is a **clear, structured deployment guide** for deploying your Backend on 
 
 ---
 
-# Full Deployment Documentation
-
+# Full Deployment Documentation (Railway+vercel) Free tier
 ---
 
 # Backend Deployment (Railway)
@@ -22,8 +21,6 @@ Below is a **clear, structured deployment guide** for deploying your Backend on 
 2. Select **Database**
 3. Choose **PostgreSQL**
 4. Wait until the database is provisioned successfully
-5. Click on the created **Postgres service**
-
 ---
 
 ## Step 3: Deploy Backend Service
@@ -47,7 +44,7 @@ Below is a **clear, structured deployment guide** for deploying your Backend on 
 5. Set root directory to:
 
 ```
-/root
+root /root
 ```
 
 ---
@@ -56,7 +53,7 @@ Below is a **clear, structured deployment guide** for deploying your Backend on 
 
 1. Go to **Networking**
 2. Click **Generate Domain**
-3. Wait for the public domain to be generated
+3. public domain to be generated on deployment
 
 ---
 
@@ -96,6 +93,7 @@ PGHOST
 Go to **Variables → Raw Editor** and add:
 
 ```env
+# Keep them for now, We will update it later once we will have variables values
 DEBUG="0"
 FRONTEND_URL="http://localhost:3000"
 CSRF_TRUSTED_ORIGINS="http://localhost:3000"
@@ -146,7 +144,7 @@ You will need this for frontend configuration.
 1. Go to **Vercel**
 2. Click **Continue with GitHub**
 3. Authorize Vercel if prompted
-4. Click **Install**
+4. Click **Install** if asked
 5. Select **Import Project**
 6. Choose your **Frontend repository**
 
@@ -180,7 +178,7 @@ frontend
 Go to **Environment Variables** and add:
 
 ```
-NEXT_PUBLIC_API_BASE_URL = https://<your-backend-public-url>
+NEXT_PUBLIC_API_BASE_URL = https://<your-backend-public-url> we wil get it later
 ```
 
 Example:
@@ -230,9 +228,9 @@ https://ethara-ai-frontend.vercel.app
 Update the following:
 
 ```env
-FRONTEND_URL="https://ethara-ai-frontend.vercel.app"
-CSRF_TRUSTED_ORIGINS="https://ethara-ai-frontend.vercel.app"
-ALLOWED_HOSTS="eathara-ai-backend-production.up.railway.app"
+FRONTEND_URL="https://ethara-ai-frontend.vercel.app"   # Frontend URL
+CSRF_TRUSTED_ORIGINS="https://ethara-ai-frontend.vercel.app"   # Frontend URL
+ALLOWED_HOSTS="eathara-ai-backend-production.up.railway.app   # Backend service -> settings -> Networking -> Copy Public Domain
 ```
 
 ⚠️ `ALLOWED_HOSTS` should contain only the backend domain (without https).
