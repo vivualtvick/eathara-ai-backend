@@ -32,8 +32,8 @@ The application is structured to:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/developervick/EatherAi-backend.git
-cd EatherAi-backend
+git clone https://github.com/vivualtvick/eathara-ai-backend.git
+cd eathara-ai-backend
 ```
 
 ### 2. Create Python Virtual Environment
