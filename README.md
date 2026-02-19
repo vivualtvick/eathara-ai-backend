@@ -25,6 +25,7 @@ The application is structured to:
 
 ---
 
+# [Deployment Guide](https://github.com/vivualtvick/eathara-ai-backend/blob/main/deployment.md)
 
 # 1. Project Setup Guide
 
