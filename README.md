@@ -69,17 +69,17 @@ Add the following variables to .env.local:
 
 ```bash
 DEBUG=1
-DATABASE_URL=postgres://myuser:mypassword@db:5432/mydatabase
-POSTGRES_DB=mydatabase
-PGUSER=myuser
-PGPASSWORD=mypassword
-PGHOST=db
-FRONTEND_URL="http://localhost:3000"
-CSRF_TRUSTED_ORIGINS="http://localhost:3000"
-ALLOWED_HOSTS="localhost"
-PGDATABASE="mydatabase"
-PGPORT=5432
-SECRET_KEY="cbjsdjsjfjknfkjsdjksajdsakfkjaskfjksjkfs"
+DATABASE_URL=postgres://myuser:mypassword@db:5432/mydatabase  # database url
+POSTGRES_DB=mydatabase                                        # database
+PGUSER=myuser                                                 # Database user
+PGPASSWORD=mypassword                                         # Databse password
+PGHOST=db                                                     # Database password
+FRONTEND_URL="http://localhost:3000"                          # Frontend URL
+CSRF_TRUSTED_ORIGINS="http://localhost:3000"                  # Fronten URL
+ALLOWED_HOSTS="localhost"                                     # Frontend Host
+PGDATABASE="mydatabase"                                       # Daatabse
+PGPORT=5432                                                   # Database Port
+SECRET_KEY="3cgrx5$ib4l*hp#&7h3_@vtbwq68ffsl@5%u)_cly0*zkmjvb"   # Secure secrete key Do not use this in production
 
 # security vars
 SECURE_PROXY_SSL_HEADER=('HTTP_X_FORWARDED_PROTO','https')
@@ -242,20 +242,4 @@ Stores user-uploaded files.
 - Clean multi-stage Docker build for smaller image size
 
 ---
-
-## Deployment Readiness
-
-This project is ready for:
-- Local development
-- Staging environments
-- Production deployment (Docker-based platforms)
-
-It can be easily extended to:
-- Kubernetes
-- Cloud-managed databases
-- Object storage for static/media files
-- CI/CD pipelines
-
----
-
 
