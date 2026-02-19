@@ -246,6 +246,19 @@ Click **Update Variables**
 
 ---
 
+## Step 4: Update Frontend Env varibel
+
+1. Click **Settings**
+2. Go to Environment Variable section
+3. Click add Envvironment variable
+4. Add NEXT_PUBLIC_API_BASE_URL
+5. Update value with backend url  # Backend Service > Settings > Networking > Public Domain
+6. Format value in https://{Public Domain}
+7. Redeploy
+8. Wait for new deployment to complete
+
+---
+
 # Deployment Complete
 
 Your system is now fully deployed:
